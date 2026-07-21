@@ -1,0 +1,2301 @@
+<!DOCTYPE html>
+<html lang="id">
+<!-- ================================================================
+     💌  WEBSITE ULANG TAHUN — edisi "surat tangan"
+     ----------------------------------------------------------------
+     CARA EDIT:
+     Scroll ke bagian bawah file ini sampai ketemu tulisan
+     "⭐ EDIT DI SINI ⭐" — semua teks (nama, ucapan, isi kartu,
+     penutup) ada di situ. Bagian lain nggak perlu disentuh.
+     ================================================================ -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Untukmu 🎂</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Great+Vibes&family=Caveat:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        /* ============================================================
+           1. TOKEN & DASAR
+           ============================================================ */
+        :root {
+            --blush: #F6E3E8;
+            --lilac: #EAE4F6;
+            --ivory: #FDF8F1;
+            --ink: #4F4763;
+            --ink-soft: #8B8399;
+            --rose: #C0728A;
+            --rose-deep: #A85D75;
+            --gold: #B99359;
+            --sage: #9DB49A;
+            --ease: cubic-bezier(.22, .75, .25, 1);
+            --grainuri: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+            --grainsoft: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.13'/%3E%3C/svg%3E");
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+            color: var(--ink);
+            background: var(--ivory);
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        ::selection {
+            background: var(--blush);
+            color: var(--rose-deep);
+        }
+
+        /* ============================================================
+           2. BACKGROUND: gradient bergerak + grain kertas + speckle
+           ============================================================ */
+        .bg {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background:
+                radial-gradient(1.2px 1.2px at 7% 14%, rgba(255, 255, 255, 0.7) 50%, transparent 100%),
+                radial-gradient(1px 1px at 16% 8%, rgba(255, 255, 255, 0.55) 50%, transparent 100%),
+                radial-gradient(1.4px 1.4px at 23% 19%, rgba(218, 190, 140, 0.65) 50%, transparent 100%),
+                radial-gradient(0.8px 0.8px at 31% 4%, rgba(255, 255, 255, 0.6) 50%, transparent 100%),
+                radial-gradient(1.1px 1.1px at 38% 22%, rgba(200, 180, 220, 0.55) 50%, transparent 100%),
+                radial-gradient(1.3px 1.3px at 44% 11%, rgba(255, 255, 255, 0.5) 50%, transparent 100%),
+                radial-gradient(0.9px 0.9px at 52% 6%, rgba(218, 190, 140, 0.6) 50%, transparent 100%),
+                radial-gradient(1.2px 1.2px at 59% 17%, rgba(255, 255, 255, 0.55) 50%, transparent 100%),
+                radial-gradient(1px 1px at 67% 9%, rgba(200, 180, 220, 0.5) 50%, transparent 100%),
+                radial-gradient(1.4px 1.4px at 74% 21%, rgba(255, 255, 255, 0.6) 50%, transparent 100%),
+                radial-gradient(0.8px 0.8px at 81% 5%, rgba(218, 190, 140, 0.55) 50%, transparent 100%),
+                radial-gradient(1.1px 1.1px at 88% 15%, rgba(255, 255, 255, 0.5) 50%, transparent 100%),
+                radial-gradient(1.3px 1.3px at 93% 8%, rgba(200, 180, 220, 0.6) 50%, transparent 100%),
+                radial-gradient(0.9px 0.9px at 11% 28%, rgba(255, 255, 255, 0.55) 50%, transparent 100%),
+                radial-gradient(1px 1px at 27% 31%, rgba(218, 190, 140, 0.5) 50%, transparent 100%),
+                radial-gradient(1.2px 1.2px at 48% 26%, rgba(255, 255, 255, 0.6) 50%, transparent 100%),
+                radial-gradient(0.8px 0.8px at 63% 33%, rgba(200, 180, 220, 0.55) 50%, transparent 100%),
+                radial-gradient(1.1px 1.1px at 78% 29%, rgba(255, 255, 255, 0.5) 50%, transparent 100%),
+                radial-gradient(1.3px 1.3px at 90% 35%, rgba(218, 190, 140, 0.6) 50%, transparent 100%),
+                radial-gradient(0.7px 0.7px at 19% 37%, rgba(255, 255, 255, 0.65) 50%, transparent 100%),
+                radial-gradient(1px 1px at 56% 39%, rgba(200, 180, 220, 0.5) 50%, transparent 100%),
+                radial-gradient(1.2px 1.2px at 3% 44%, rgba(218, 190, 140, 0.55) 50%, transparent 100%),
+                radial-gradient(0.9px 0.9px at 34% 42%, rgba(255, 255, 255, 0.5) 50%, transparent 100%),
+                radial-gradient(1.1px 1.1px at 70% 46%, rgba(255, 255, 255, 0.55) 50%, transparent 100%),
+                radial-gradient(1.3px 1.3px at 15% 52%, rgba(200, 180, 220, 0.6) 50%, transparent 100%),
+                radial-gradient(0.8px 0.8px at 42% 49%, rgba(218, 190, 140, 0.5) 50%, transparent 100%),
+                radial-gradient(1px 1px at 61% 54%, rgba(255, 255, 255, 0.55) 50%, transparent 100%),
+                radial-gradient(1.2px 1.2px at 85% 51%, rgba(255, 255, 255, 0.5) 50%, transparent 100%),
+                radial-gradient(60% 50% at 14% 10%, var(--blush) 0%, transparent 62%),
+                radial-gradient(55% 45% at 88% 18%, var(--lilac) 0%, transparent 62%),
+                radial-gradient(75% 60% at 50% 106%, #FBEBDE 0%, transparent 65%),
+                var(--ivory);
+            animation: twinkleBg 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes twinkleBg {
+            0% {
+                opacity: 0.85;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .bg::before,
+        .bg::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(72px);
+            opacity: .5;
+        }
+
+        .bg::before {
+            width: 54vmax;
+            height: 54vmax;
+            left: -16vmax;
+            top: -18vmax;
+            background: #F4D8E1;
+            animation: drift1 27s ease-in-out infinite alternate;
+        }
+
+        .bg::after {
+            width: 48vmax;
+            height: 48vmax;
+            right: -13vmax;
+            bottom: -15vmax;
+            background: #E1D8F4;
+            animation: drift2 35s ease-in-out infinite alternate;
+        }
+
+        @keyframes drift1 {
+            to {
+                transform: translate(9vmax, 7vmax) scale(1.08);
+            }
+        }
+
+        @keyframes drift2 {
+            to {
+                transform: translate(-8vmax, -6vmax) scale(1.12);
+            }
+        }
+
+        .bg-orb {
+            position: fixed;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            filter: blur(40px);
+            opacity: 0.35;
+        }
+        .bg-orb.orb1 {
+            width: 22vmax;
+            height: 22vmax;
+            left: 40%;
+            top: 25%;
+            background: #F7E0D0;
+            animation: orbFloat1 18s ease-in-out infinite;
+        }
+        .bg-orb.orb2 {
+            width: 16vmax;
+            height: 16vmax;
+            left: 60%;
+            top: 55%;
+            background: #E8DCF5;
+            animation: orbFloat2 22s ease-in-out infinite;
+        }
+        .bg-orb.orb3 {
+            width: 20vmax;
+            height: 20vmax;
+            left: 15%;
+            top: 60%;
+            background: #FBE4EC;
+            animation: orbFloat3 20s ease-in-out infinite;
+        }
+
+        @keyframes orbFloat1 {
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+            33% {
+                transform: translate(4vmax, -2vmax) scale(1.15);
+            }
+            66% {
+                transform: translate(-2vmax, 3vmax) scale(0.9);
+            }
+        }
+        @keyframes orbFloat2 {
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+            33% {
+                transform: translate(-3vmax, -3vmax) scale(1.1);
+            }
+            66% {
+                transform: translate(2vmax, 2vmax) scale(0.88);
+            }
+        }
+        @keyframes orbFloat3 {
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+            50% {
+                transform: translate(3vmax, -2vmax) scale(1.12);
+            }
+        }
+
+        .grain {
+            position: fixed;
+            inset: 0;
+            z-index: 7;
+            pointer-events: none;
+            background-image: var(--grainuri);
+            opacity: .055;
+            mix-blend-mode: multiply;
+        }
+
+        #petalsBack {
+            position: fixed;
+            inset: 0;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        #petalsFront {
+            position: fixed;
+            inset: 0;
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        /* ============================================================
+           ✨ 2b. GATE · COUNTDOWN sebelum hari-H
+           ============================================================ */
+        .gate {
+            position: fixed;
+            inset: 0;
+            z-index: 4;
+            display: flex;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .8s var(--ease);
+        }
+
+        .gate.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .gate.hide {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .gate-inner {
+            margin: auto;
+            width: 100%;
+            max-width: 600px;
+            padding: clamp(44px, 8vh, 80px) 24px;
+            padding-bottom: calc(clamp(48px, 9vh, 88px) + env(safe-area-inset-bottom));
+            text-align: center;
+        }
+
+        .cd {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 8px;
+            margin-top: 30px;
+        }
+
+        .cd-box {
+            min-width: clamp(58px, 17vw, 86px);
+            padding: 15px 4px 12px;
+            background:
+                var(--grainsoft),
+                linear-gradient(180deg, #FFFDF7, #FBF3E7);
+            background-blend-mode: multiply, normal;
+            border: 1px solid rgba(79, 71, 99, .07);
+            border-radius: 12px 14px 11px 15px / 14px 11px 15px 12px;
+            box-shadow: 0 16px 30px -18px rgba(120, 85, 115, .5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3px;
+        }
+
+        .cd .cd-box:nth-of-type(odd) {
+            transform: rotate(-1.3deg);
+        }
+
+        .cd .cd-box:nth-of-type(even) {
+            transform: rotate(1.3deg);
+        }
+
+        .cd-num {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 600;
+            font-size: clamp(2rem, 9vw, 3.1rem);
+            line-height: 1;
+            color: var(--ink);
+            font-variant-numeric: tabular-nums;
+        }
+
+        .cd-lab {
+            font-size: .58rem;
+            font-weight: 700;
+            letter-spacing: .24em;
+            text-transform: uppercase;
+            color: var(--rose);
+        }
+
+        .cd-sep {
+            align-self: center;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.7rem;
+            color: var(--ink-soft);
+            padding-bottom: 16px;
+            animation: blinkSep 1s steps(1) infinite;
+        }
+
+        @keyframes blinkSep {
+            50% {
+                opacity: .18;
+            }
+        }
+
+        .gate-tanggal {
+            margin-top: 22px;
+            font-size: 1.3rem;
+            color: var(--ink-soft);
+        }
+
+        body.gated .dots {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* ============================================================
+           3. SISTEM LAYER
+           ============================================================ */
+        .layer {
+            position: fixed;
+            inset: 0;
+            z-index: 2;
+            display: flex;
+            overflow-y: auto;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(26px);
+            pointer-events: none;
+            transition: opacity .6s var(--ease), transform .6s var(--ease), visibility 0s .6s;
+        }
+
+        .layer.is-active {
+            opacity: 1;
+            visibility: visible;
+            transform: none;
+            pointer-events: auto;
+            z-index: 3;
+            transition: opacity .7s var(--ease) .12s, transform .7s var(--ease) .12s;
+        }
+
+        .inner {
+            position: relative;
+            margin: auto;
+            width: 100%;
+            padding: clamp(44px, 8vh, 80px) 24px;
+            padding-bottom: calc(clamp(48px, 9vh, 88px) + env(safe-area-inset-bottom));
+            text-align: center;
+        }
+
+        .inner.narrow {
+            max-width: 600px;
+        }
+
+        .inner.wide {
+            max-width: 920px;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(18px);
+            transition: opacity .8s var(--ease), transform .8s var(--ease);
+        }
+
+        .layer.is-in .reveal {
+            opacity: 1;
+            transform: none;
+        }
+
+        /* ============================================================
+           4. TIPOGRAFI
+           ============================================================ */
+        .eyebrow {
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .34em;
+            text-transform: uppercase;
+            color: var(--rose);
+        }
+
+        .eyebrow::before,
+        .eyebrow::after {
+            content: "—  ❀  —";
+            letter-spacing: .12em;
+            color: rgba(185, 147, 89, .55);
+            font-weight: 500;
+            margin: 0 12px;
+            font-size: .62rem;
+            vertical-align: 1px;
+        }
+
+        .hand {
+            font-family: 'Caveat', 'Segoe Print', cursive;
+            font-weight: 500;
+        }
+
+        .h-serif {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 500;
+            font-style: italic;
+            font-size: clamp(1.8rem, 6vw, 2.6rem);
+            line-height: 1.22;
+            color: var(--ink);
+        }
+
+        .lead {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: clamp(1.2rem, 4.6vw, 1.45rem);
+            color: var(--ink-soft);
+            margin-top: 14px;
+        }
+
+        .pesan {
+            margin-top: 22px;
+        }
+
+        .pesan p {
+            font-size: 1rem;
+            line-height: 1.85;
+            color: var(--ink);
+        }
+
+        .pesan p+p {
+            margin-top: .9em;
+        }
+
+        /* ============================================================
+           5. TOMBOL "STIKER"
+           ============================================================ */
+        .btn {
+            appearance: none;
+            cursor: pointer;
+            font: 600 1rem/1 'Plus Jakarta Sans', system-ui, sans-serif;
+            letter-spacing: .02em;
+            color: #fff;
+            background: linear-gradient(135deg, #C77E96, #9E85C9);
+            border: 3px solid #fff;
+            padding: 16px 32px;
+            border-radius: 999px;
+            margin-top: 34px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 16px 30px -14px rgba(168, 93, 117, .6), 0 3px 10px -4px rgba(80, 60, 90, .25);
+            transform: rotate(-1.4deg);
+            transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+            touch-action: manipulation;
+        }
+
+        .btn .ar {
+            transition: transform .3s var(--ease);
+            font-weight: 700;
+        }
+
+        .btn:hover {
+            transform: rotate(0deg) translateY(-2px);
+            box-shadow: 0 20px 36px -14px rgba(168, 93, 117, .7), 0 3px 10px -4px rgba(80, 60, 90, .25);
+        }
+
+        .btn:hover .ar {
+            transform: translateX(4px);
+        }
+
+        .btn:active {
+            transform: scale(.95);
+        }
+
+        .btn:focus-visible {
+            outline: 3px solid rgba(192, 114, 138, .5);
+            outline-offset: 3px;
+        }
+
+        .btn.subtle {
+            background: transparent;
+            border: 0;
+            color: var(--ink-soft);
+            box-shadow: none;
+            padding: 12px 18px;
+            transform: none;
+            font-weight: 500;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            text-decoration-color: rgba(139, 131, 153, .45);
+        }
+
+        .btn.subtle:hover {
+            color: var(--rose-deep);
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* ============================================================
+           6. LAYER 0 · AMPLOP
+           ============================================================ */
+        .env-scene {
+            margin-top: 34px;
+            animation: envFloat 4.2s ease-in-out infinite;
+        }
+
+        @keyframes envFloat {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-9px);
+            }
+        }
+
+        .env {
+            position: relative;
+            width: min(330px, 84vw);
+            aspect-ratio: 1.52;
+            margin: 0 auto;
+            cursor: pointer;
+            perspective: 1100px;
+            transform: rotate(-1.6deg);
+            transition: transform .35s var(--ease);
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .env:hover {
+            transform: rotate(-.4deg) scale(1.02);
+        }
+
+        .env:focus-visible {
+            outline: 3px solid rgba(192, 114, 138, .5);
+            outline-offset: 8px;
+            border-radius: 12px;
+        }
+
+        .env-back {
+            position: absolute;
+            inset: 0;
+            border-radius: 9px;
+            background:
+                radial-gradient(circle at 8px 8px, rgba(192, 114, 138, .28) 2px, transparent 2.6px) 0 0/17px 17px,
+                linear-gradient(180deg, #F2D9E1, #EDD0DA);
+            box-shadow: 0 30px 50px -26px rgba(140, 90, 115, .55);
+        }
+
+        .env-letter {
+            position: absolute;
+            left: 5%;
+            right: 5%;
+            bottom: 4%;
+            height: 88%;
+            background: linear-gradient(180deg, #FFFDF7, #FDF6EC);
+            border-radius: 7px 7px 0 0;
+            box-shadow: 0 -8px 20px -14px rgba(120, 90, 110, .5);
+            z-index: 2;
+            transform: translateY(6%);
+            transition: transform .95s var(--ease) .4s;
+            display: grid;
+            place-items: center;
+        }
+
+        .env.open .env-letter {
+            transform: translateY(-56%);
+        }
+
+        .env-to {
+            font-family: 'Caveat', 'Segoe Print', cursive;
+            font-size: 1.15rem;
+            color: var(--ink-soft);
+            line-height: 1.15;
+            text-align: center;
+            padding-top: 14%;
+        }
+
+        .env-to b {
+            display: block;
+            font-weight: 600;
+            font-size: 1.65rem;
+            color: var(--rose-deep);
+        }
+
+        .env-pocket {
+            position: absolute;
+            inset: 0;
+            z-index: 3;
+            border-radius: 9px;
+            background: linear-gradient(180deg, #F7E4EB 0%, #F1D7E1 100%);
+            clip-path: polygon(0 6%, 50% 48%, 100% 6%, 100% 100%, 0 100%);
+            box-shadow: inset 0 8px 16px -12px rgba(130, 80, 105, .4);
+        }
+
+        .env-flap {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 52%;
+            z-index: 4;
+            transform-origin: 50% 0;
+            background: linear-gradient(180deg, #F8E8EE, #F0D6E0);
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+            border-radius: 9px 9px 0 0;
+            backface-visibility: hidden;
+            transition: transform .8s var(--ease), z-index 0s .32s;
+        }
+
+        .env.open .env-flap {
+            transform: rotateX(-178deg);
+            z-index: 1;
+        }
+
+        .seal {
+            position: absolute;
+            z-index: 5;
+            left: 50%;
+            top: 47%;
+            width: 60px;
+            height: 60px;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background: radial-gradient(circle at 32% 28%, #D493A6, #B4657C 62%, #96475E);
+            box-shadow:
+                0 10px 18px -8px rgba(150, 71, 94, .75),
+                inset 0 3px 6px rgba(255, 255, 255, .4),
+                inset 0 -5px 9px rgba(110, 35, 60, .4);
+            display: grid;
+            place-items: center;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 600;
+            font-size: 1.6rem;
+            color: #F9E6EC;
+            transition: transform .45s var(--ease), opacity .35s ease;
+        }
+
+        .seal::before,
+        .seal::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle at 35% 30%, #CE8BA0, #A85D75);
+            z-index: -1;
+        }
+
+        .seal::before {
+            width: 17px;
+            height: 17px;
+            left: -5px;
+            bottom: 6px;
+        }
+
+        .seal::after {
+            width: 12px;
+            height: 12px;
+            right: -3px;
+            top: 8px;
+        }
+
+        .env.open .seal {
+            transform: translate(-50%, -50%) scale(1.3);
+            opacity: 0;
+        }
+
+        .env-stamp {
+            position: absolute;
+            top: 8%;
+            right: 6%;
+            width: 46px;
+            height: 54px;
+            z-index: 4;
+            background: #FFFDF8;
+            border-radius: 2px;
+            transform: rotate(4deg);
+            box-shadow: 0 3px 8px -3px rgba(100, 70, 90, .4);
+            display: grid;
+            place-items: center;
+            font-size: 21px;
+        }
+
+        .env-stamp::after {
+            content: "";
+            position: absolute;
+            inset: 4px;
+            border: 1.4px dashed rgba(79, 71, 99, .3);
+            border-radius: 1px;
+        }
+
+        .env-mark {
+            position: absolute;
+            top: 5%;
+            right: 20%;
+            width: 56px;
+            height: 56px;
+            z-index: 5;
+            border: 1.6px solid rgba(79, 71, 99, .3);
+            border-radius: 50%;
+            transform: rotate(-12deg);
+            opacity: .85;
+        }
+
+        .env-mark::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -28px;
+            width: 72px;
+            height: 15px;
+            transform: translateY(-50%);
+            background: repeating-linear-gradient(180deg,
+                    rgba(79, 71, 99, .28) 0 1.6px, transparent 1.6px 6.2px);
+        }
+
+        .hint {
+            margin-top: 26px;
+            font-family: 'Caveat', 'Segoe Print', cursive;
+            font-size: 1.25rem;
+            color: var(--ink-soft);
+        }
+
+        .hint .hint-ar {
+            display: inline-block;
+            margin-left: 6px;
+            animation: nudgeY 1.6s ease-in-out infinite;
+        }
+
+        @keyframes nudgeY {
+            50% {
+                transform: translateY(-4px);
+            }
+        }
+
+        /* ============================================================
+           ✨ 7. LAYER 1 · UCAPAN + KUE ULANG TAHUN
+           ============================================================ */
+        .nama-besar {
+            font-family: 'Great Vibes', cursive;
+            font-weight: 400;
+            font-size: clamp(3.2rem, 15vw, 6rem);
+            line-height: 1.18;
+            padding: .14em .26em;
+            display: inline-block;
+            background: linear-gradient(120deg, var(--rose-deep) 10%, #8F76BE 90%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            clip-path: inset(-25% 106% -25% -6%);
+            margin-top: 10px;
+        }
+
+        .layer.is-in .nama-besar {
+            animation: tulisNama 1.5s var(--ease) .5s forwards;
+        }
+
+        @keyframes tulisNama {
+            to {
+                clip-path: inset(-25% -6% -25% -6%);
+            }
+        }
+
+        .flourish {
+            width: min(230px, 56vw);
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        .flourish path {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+        }
+
+        .layer.is-in .flourish path {
+            animation: draw 1.3s var(--ease) 1.35s forwards;
+        }
+
+        @keyframes draw {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        /* ✨ KUE ULANG TAHUN */
+        .cake-container {
+            margin: 18px auto 10px;
+            max-width: 260px;
+            width: 70%;
+            opacity: 0;
+            transform: translateY(24px) scale(0.9);
+            transition: opacity .7s var(--ease) .3s, transform .7s var(--ease) .3s;
+        }
+        .layer.is-in .cake-container {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        .cake-container svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        /* lilin & api */
+        .candle-body {
+            fill: #FBEED6;
+            stroke: #E8D5B0;
+            stroke-width: 1.2;
+        }
+        .flame-outer {
+            fill: #F9B84A;
+            animation: flickerOuter 2s ease-in-out infinite;
+        }
+        .flame-inner {
+            fill: #FFF7E1;
+            animation: flickerInner 1.8s ease-in-out infinite;
+        }
+        .flame-core {
+            fill: #FFE0A3;
+            animation: flickerCore 1.6s ease-in-out infinite;
+        }
+        .candle:nth-child(1) .flame-outer,
+        .candle:nth-child(1) .flame-inner,
+        .candle:nth-child(1) .flame-core {
+            animation-delay: 0s;
+        }
+        .candle:nth-child(2) .flame-outer,
+        .candle:nth-child(2) .flame-inner,
+        .candle:nth-child(2) .flame-core {
+            animation-delay: 0.35s;
+        }
+        .candle:nth-child(3) .flame-outer,
+        .candle:nth-child(3) .flame-inner,
+        .candle:nth-child(3) .flame-core {
+            animation-delay: 0.7s;
+        }
+        .candle:nth-child(4) .flame-outer,
+        .candle:nth-child(4) .flame-inner,
+        .candle:nth-child(4) .flame-core {
+            animation-delay: 0.15s;
+        }
+        .candle:nth-child(5) .flame-outer,
+        .candle:nth-child(5) .flame-inner,
+        .candle:nth-child(5) .flame-core {
+            animation-delay: 0.55s;
+        }
+
+        @keyframes flickerOuter {
+            0%,
+            100% {
+                transform: scaleY(1) scaleX(1);
+                opacity: 0.85;
+            }
+            30% {
+                transform: scaleY(1.2) scaleX(0.75);
+                opacity: 1;
+            }
+            60% {
+                transform: scaleY(0.85) scaleX(1.15);
+                opacity: 0.7;
+            }
+            85% {
+                transform: scaleY(1.1) scaleX(0.85);
+                opacity: 0.9;
+            }
+        }
+        @keyframes flickerInner {
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.9;
+            }
+            40% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            70% {
+                transform: scale(0.85);
+                opacity: 0.7;
+            }
+        }
+        @keyframes flickerCore {
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(0.8);
+                opacity: 0.75;
+            }
+        }
+
+        .ticket {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: .73rem;
+            font-weight: 700;
+            letter-spacing: .22em;
+            text-transform: uppercase;
+            color: #9C7F4E;
+            background: #FFFBF2;
+            border-top: 1px dashed rgba(185, 147, 89, .55);
+            border-bottom: 1px dashed rgba(185, 147, 89, .55);
+            padding: 9px 26px;
+            -webkit-mask:
+                radial-gradient(circle 6px at 0 50%, transparent 97%, #000) left/51% 100% no-repeat,
+                radial-gradient(circle 6px at 100% 50%, transparent 97%, #000) right/51% 100% no-repeat;
+            mask:
+                radial-gradient(circle 6px at 0 50%, transparent 97%, #000) left/51% 100% no-repeat,
+                radial-gradient(circle 6px at 100% 50%, transparent 97%, #000) right/51% 100% no-repeat;
+        }
+
+        .ticket.hidden {
+            display: none;
+        }
+
+        .orn {
+            position: absolute;
+            width: min(110px, 24vw);
+            height: auto;
+            opacity: .65;
+            pointer-events: none;
+        }
+
+        .orn.tl {
+            top: 8px;
+            left: 6px;
+        }
+
+        .orn.br {
+            bottom: 8px;
+            right: 6px;
+            transform: scale(-1);
+        }
+
+        .orn .vine {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+        }
+
+        .layer.is-in .orn .vine {
+            animation: draw 1.6s var(--ease) .7s forwards;
+        }
+
+        .orn .leaf {
+            opacity: 0;
+            transition: opacity .9s ease 1.6s;
+        }
+
+        .layer.is-in .orn .leaf {
+            opacity: 1;
+        }
+
+        /* ============================================================
+           8. LAYER 2 · CAROUSEL KARTU CATATAN
+           ============================================================ */
+        .l2-head {
+            margin-bottom: 4px;
+        }
+
+        .l2-head .h-serif {
+            margin-top: 12px;
+        }
+
+        .l2-sub {
+            font-family: 'Caveat', 'Segoe Print', cursive;
+            font-size: 1.3rem;
+            color: var(--ink-soft);
+            margin-top: 6px;
+        }
+
+        .car-wrap {
+            position: relative;
+        }
+
+        .car {
+            --cardw: min(76vw, 330px);
+            display: flex;
+            gap: 20px;
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            overflow-x: auto;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            padding: 44px calc(50vw - var(--cardw)/2) 46px;
+            scrollbar-width: none;
+        }
+
+        .car::-webkit-scrollbar {
+            display: none;
+        }
+
+        .card {
+            flex: 0 0 var(--cardw);
+            scroll-snap-align: center;
+            position: relative;
+            text-align: left;
+            background:
+                var(--grainsoft),
+                linear-gradient(178deg, var(--tint1), var(--tint2));
+            background-blend-mode: multiply, normal;
+            border: 1px solid rgba(79, 71, 99, .07);
+            border-radius: 13px 15px 12px 17px / 15px 12px 16px 13px;
+            padding: 34px 24px 26px;
+            box-shadow:
+                0 22px 40px -24px rgba(120, 85, 115, .5),
+                0 4px 12px -6px rgba(120, 85, 115, .18);
+            transform: rotate(var(--tilt));
+            transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+        }
+
+        @media (hover:hover) {
+            .card:hover {
+                transform: rotate(0deg) translateY(-6px) scale(1.015);
+                box-shadow:
+                    0 30px 50px -26px rgba(120, 85, 115, .6),
+                    0 4px 12px -6px rgba(120, 85, 115, .2);
+            }
+        }
+
+        .card:nth-child(4n+1) {
+            --tint1: #FFFDF7;
+            --tint2: #FBF4E9;
+            --tilt: -1.7deg;
+            --tape1: #F3BFCE;
+            --tape2: #EBA9BD;
+        }
+
+        .card:nth-child(4n+2) {
+            --tint1: #FFFAFA;
+            --tint2: #FAEFF1;
+            --tilt: 1.3deg;
+            --tape1: #CBBCE8;
+            --tape2: #B9A6DE;
+        }
+
+        .card:nth-child(4n+3) {
+            --tint1: #FCFBFF;
+            --tint2: #F3F0FA;
+            --tilt: -1deg;
+            --tape1: #EACF9E;
+            --tape2: #DFBE83;
+        }
+
+        .card:nth-child(4n+4) {
+            --tint1: #FEFCF6;
+            --tint2: #F7F2E6;
+            --tilt: 1.9deg;
+            --tape1: #BCD3B9;
+            --tape2: #A7C4A3;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            top: -13px;
+            left: 50%;
+            width: 98px;
+            height: 27px;
+            transform: translateX(-50%) rotate(calc(var(--tilt) * -1.6));
+            background: repeating-linear-gradient(45deg,
+                    var(--tape1) 0 7px, var(--tape2) 7px 14px);
+            opacity: .85;
+            clip-path: polygon(2% 12%, 5% 0, 95% 4%, 98% 16%, 100% 55%, 97% 100%, 6% 96%, 0 60%);
+            box-shadow: 0 2px 5px -2px rgba(100, 70, 90, .35);
+        }
+
+        .card-title {
+            font-family: 'Caveat', 'Segoe Print', cursive;
+            font-weight: 600;
+            font-size: 1.55rem;
+            color: var(--rose-deep);
+            line-height: 1.1;
+        }
+
+        .card-title .em {
+            font-size: 1.25rem;
+            margin-right: 8px;
+        }
+
+        .card .sq {
+            display: block;
+            width: 56px;
+            height: auto;
+            margin: 7px 0 12px;
+            opacity: .65;
+        }
+
+        .card-body {
+            font-size: .94rem;
+            line-height: 1.75;
+            color: var(--ink);
+            opacity: .92;
+            white-space: pre-line;
+        }
+
+        .card .flower {
+            position: absolute;
+            right: 10px;
+            bottom: 8px;
+            width: 52px;
+            height: 52px;
+            opacity: .55;
+            transform: rotate(-14deg);
+            pointer-events: none;
+        }
+
+        .car-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-top: -6px;
+        }
+
+        .arrow {
+            appearance: none;
+            cursor: pointer;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #FFFDF8;
+            border: 1.4px solid rgba(79, 71, 99, .18);
+            box-shadow: 0 8px 18px -8px rgba(120, 85, 115, .4);
+            display: grid;
+            place-items: center;
+            color: var(--ink);
+            transition: all .3s var(--ease);
+            touch-action: manipulation;
+        }
+
+        .arrow:hover:not(:disabled) {
+            background: var(--rose-deep);
+            color: #fff;
+            border-color: var(--rose-deep);
+            transform: translateY(-2px);
+        }
+
+        .arrow:active:not(:disabled) {
+            transform: scale(.92);
+        }
+
+        .arrow:disabled {
+            opacity: .32;
+            cursor: default;
+        }
+
+        .arrow:focus-visible {
+            outline: 3px solid rgba(192, 114, 138, .5);
+            outline-offset: 3px;
+        }
+
+        .arrow svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .counter {
+            font-family: 'Caveat', 'Segoe Print', cursive;
+            font-size: 1.35rem;
+            color: var(--ink-soft);
+            min-width: 56px;
+        }
+
+        .hint-swipe {
+            font-family: 'Caveat', 'Segoe Print', cursive;
+            font-size: 1.2rem;
+            color: var(--ink-soft);
+            margin-top: 14px;
+            transition: opacity .6s ease;
+        }
+
+        .hint-swipe .hint-ar {
+            display: inline-block;
+            animation: nudgeX 1.6s ease-in-out infinite;
+        }
+
+        @keyframes nudgeX {
+            50% {
+                transform: translateX(6px);
+            }
+        }
+
+        .hint-swipe.gone {
+            opacity: 0;
+        }
+
+        /* ============================================================
+           ✨ 9. LAYER 3 · PENUTUP (lembar surat + hati beterbangan)
+           ============================================================ */
+        .sheet-wrap {
+            position: relative;
+            display: inline-block;
+            margin: 0 auto;
+        }
+        .sheet {
+            position: relative;
+            max-width: 480px;
+            margin: 18px auto 0;
+            background:
+                var(--grainsoft),
+                linear-gradient(180deg, #FFFDF7, #FBF3E7);
+            background-blend-mode: multiply, normal;
+            border: 1px solid rgba(79, 71, 99, .07);
+            border-radius: 14px 16px 13px 18px / 16px 13px 17px 14px;
+            padding: 44px 28px 36px;
+            box-shadow: 0 26px 48px -26px rgba(120, 85, 115, .55);
+            transform: rotate(-.7deg);
+            animation: sheetGlow 3.5s ease-in-out infinite;
+        }
+        @keyframes sheetGlow {
+            0%,
+            100% {
+                box-shadow: 0 26px 48px -26px rgba(120, 85, 115, .55), 0 0 0 0 rgba(192, 114, 138, 0);
+            }
+            50% {
+                box-shadow: 0 26px 48px -20px rgba(168, 93, 117, .45), 0 0 50px -8px rgba(192, 114, 138, .25), 0 0 90px -20px rgba(185, 147, 89, .18);
+            }
+        }
+        .sheet::before {
+            content: "";
+            position: absolute;
+            top: -13px;
+            left: 50%;
+            width: 104px;
+            height: 27px;
+            transform: translateX(-50%) rotate(2deg);
+            background: repeating-linear-gradient(45deg, #CBBCE8 0 7px, #B9A6DE 7px 14px);
+            opacity: .85;
+            clip-path: polygon(2% 12%, 5% 0, 95% 4%, 98% 16%, 100% 55%, 97% 100%, 6% 96%, 0 60%);
+            box-shadow: 0 2px 5px -2px rgba(100, 70, 90, .35);
+        }
+        /* sparkle dekoratif di sudut sheet */
+        .sheet-sparkle {
+            position: absolute;
+            pointer-events: none;
+            font-size: 1.1rem;
+            animation: sparkleTwinkle 2.2s ease-in-out infinite;
+        }
+        .sheet-sparkle.tl-s {
+            top: -8px;
+            left: -6px;
+            animation-delay: 0s;
+        }
+        .sheet-sparkle.tr-s {
+            top: -8px;
+            right: -6px;
+            animation-delay: 0.7s;
+        }
+        .sheet-sparkle.bl-s {
+            bottom: -6px;
+            left: -4px;
+            animation-delay: 1.4s;
+        }
+        .sheet-sparkle.br-s {
+            bottom: -6px;
+            right: -4px;
+            animation-delay: 0.3s;
+        }
+        @keyframes sparkleTwinkle {
+            0%,
+            100% {
+                opacity: 0.3;
+                transform: scale(0.8);
+            }
+            50% {
+                opacity: 0.9;
+                transform: scale(1.25);
+            }
+        }
+
+        .seal-mini {
+            width: 52px;
+            height: 52px;
+            margin: 0 auto 18px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 32% 28%, #D493A6, #B4657C 62%, #96475E);
+            box-shadow: 0 8px 15px -7px rgba(150, 71, 94, .7),
+                inset 0 3px 5px rgba(255, 255, 255, .4),
+                inset 0 -4px 8px rgba(110, 35, 60, .4);
+            display: grid;
+            place-items: center;
+            font-size: 1.25rem;
+            color: #F9E6EC;
+            animation: sealPulse 3s ease-in-out infinite;
+        }
+        @keyframes sealPulse {
+            0%,
+            100% {
+                box-shadow: 0 8px 15px -7px rgba(150, 71, 94, .7), inset 0 3px 5px rgba(255, 255, 255, .4), inset 0 -4px 8px rgba(110, 35, 60, .4);
+            }
+            50% {
+                box-shadow: 0 8px 22px -5px rgba(192, 114, 138, .6), 0 0 30px -8px rgba(192, 114, 138, .4), inset 0 3px 5px rgba(255, 255, 255, .4), inset 0 -4px 8px rgba(110, 35, 60, .4);
+            }
+        }
+
+        .ttd {
+            font-family: 'Caveat', 'Segoe Print', cursive;
+            font-size: 1.45rem;
+            color: var(--rose-deep);
+            margin-top: 26px;
+        }
+
+        /* ✨ HATI BETERRBANGAN di layer 3 */
+        .hearts-container {
+            position: fixed;
+            inset: 0;
+            z-index: 2;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .float-heart {
+            position: absolute;
+            bottom: -40px;
+            animation: heartFloatUp 7s ease-in forwards;
+            pointer-events: none;
+            will-change: transform;
+        }
+        @keyframes heartFloatUp {
+            0% {
+                transform: translateY(0) translateX(0) rotate(0deg) scale(0.6);
+                opacity: 0.85;
+            }
+            40% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-110vh) translateX(var(--drift, 30px)) rotate(var(--spin, 25deg)) scale(1.1);
+                opacity: 0;
+            }
+        }
+
+        /* ============================================================
+           10. TITIK PROGRES
+           ============================================================ */
+        .dots {
+            position: fixed;
+            z-index: 4;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: calc(15px + env(safe-area-inset-bottom));
+            display: flex;
+            gap: 9px;
+        }
+
+        .dots i {
+            width: 6px;
+            height: 6px;
+            border-radius: 999px;
+            background: rgba(79, 71, 99, .22);
+            transition: all .4s var(--ease);
+        }
+
+        .dots i.on {
+            width: 22px;
+            background: var(--rose);
+        }
+
+        /* ============================================================
+           11. REDUCED MOTION
+           ============================================================ */
+        @media (prefers-reduced-motion:reduce) {
+            .bg,
+            .bg::before,
+            .bg::after,
+            .bg-orb,
+            .env-scene,
+            .hint .hint-ar,
+            .hint-swipe .hint-ar,
+            .sheet,
+            .seal-mini,
+            .sheet-sparkle,
+            .float-heart,
+            .flame-outer,
+            .flame-inner,
+            .flame-core,
+            .cd-sep {
+                animation: none !important;
+            }
+            .layer,
+            .reveal,
+            .btn,
+            .card,
+            .dots i,
+            .env-flap,
+            .env-letter,
+            .seal,
+            .arrow,
+            .cake-container,
+            .gate {
+                transition-duration: .01ms !important;
+            }
+            .layer.is-in .nama-besar,
+            .layer.is-in .flourish path,
+            .layer.is-in .orn .vine {
+                animation-duration: .01ms !important;
+                animation-delay: 0s !important;
+            }
+            #petalsBack,
+            #petalsFront {
+                display: none;
+            }
+            .hearts-container {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg" aria-hidden="true">
+        <div class="bg-orb orb1" aria-hidden="true"></div>
+        <div class="bg-orb orb2" aria-hidden="true"></div>
+        <div class="bg-orb orb3" aria-hidden="true"></div>
+    </div>
+    <canvas id="petalsBack" aria-hidden="true"></canvas>
+
+    <!-- ✨ GATE · countdown menuju hari-H (nutup semuanya sebelum waktunya) -->
+    <section class="gate" id="gate" aria-label="Hitung mundur">
+        <div class="gate-inner">
+            <p class="eyebrow" id="gate-eyebrow"></p>
+            <p class="lead" id="gate-teks"></p>
+            <div class="cd">
+                <div class="cd-box"><span class="cd-num" id="cd-hari">00</span><span class="cd-lab">hari</span></div>
+                <span class="cd-sep">:</span>
+                <div class="cd-box"><span class="cd-num" id="cd-jam">00</span><span class="cd-lab">jam</span></div>
+                <span class="cd-sep">:</span>
+                <div class="cd-box"><span class="cd-num" id="cd-menit">00</span><span class="cd-lab">menit</span></div>
+                <span class="cd-sep">:</span>
+                <div class="cd-box"><span class="cd-num" id="cd-detik">00</span><span class="cd-lab">detik</span></div>
+            </div>
+            <p class="gate-tanggal hand" id="gate-tanggal"></p>
+        </div>
+    </section>
+
+    <main>
+        <!-- LAYER 0 · Amplop -->
+        <section class="layer is-active" id="layer-0">
+            <div class="inner narrow">
+                <p class="eyebrow reveal" id="l0-eyebrow"></p>
+                <p class="lead reveal" id="l0-teks"></p>
+                <div class="env-scene reveal">
+                    <div class="env" id="env" role="button" tabindex="0" aria-label="Buka amplop">
+                        <div class="env-back"></div>
+                        <div class="env-letter">
+                            <p class="env-to">untuk<b id="l0-nama"></b></p>
+                        </div>
+                        <div class="env-pocket"></div>
+                        <div class="env-flap"></div>
+                        <div class="env-stamp">🌷</div>
+                        <div class="env-mark"></div>
+                        <div class="seal"><span id="seal-init">♡</span></div>
+                    </div>
+                </div>
+                <p class="hint reveal"><span id="l0-hint"></span><span class="hint-ar">☝︎</span></p>
+            </div>
+        </section>
+
+        <!-- ✨ LAYER 1 · Ucapan utama + Kue -->
+        <section class="layer" id="layer-1">
+            <div class="inner narrow">
+                <svg class="orn tl" viewBox="0 0 120 120" aria-hidden="true">
+                    <path class="vine" pathLength="1" d="M8 114 C 22 72, 52 40, 112 14" fill="none" stroke="#B99359" stroke-width="1.7" stroke-linecap="round" />
+                    <path class="leaf" d="M34 78 q-14 -4 -16 -18 q 15 2 16 18Z" fill="#C9A86F" opacity=".5" />
+                    <path class="leaf" d="M62 48 q-13 -6 -13 -20 q 14 4 13 20Z" fill="#B98FA6" opacity=".45" />
+                    <path class="leaf" d="M92 27 q-10 -7 -9 -19 q 12 5 9 19Z" fill="#A6B9A0" opacity=".5" />
+                    <circle class="leaf" cx="112" cy="14" r="3.4" fill="#C0728A" opacity=".55" />
+                </svg>
+                <svg class="orn br" viewBox="0 0 120 120" aria-hidden="true">
+                    <path class="vine" pathLength="1" d="M8 114 C 22 72, 52 40, 112 14" fill="none" stroke="#B99359" stroke-width="1.7" stroke-linecap="round" />
+                    <path class="leaf" d="M34 78 q-14 -4 -16 -18 q 15 2 16 18Z" fill="#C9A86F" opacity=".5" />
+                    <path class="leaf" d="M62 48 q-13 -6 -13 -20 q 14 4 13 20Z" fill="#B98FA6" opacity=".45" />
+                    <path class="leaf" d="M92 27 q-10 -7 -9 -19 q 12 5 9 19Z" fill="#A6B9A0" opacity=".5" />
+                    <circle class="leaf" cx="112" cy="14" r="3.4" fill="#C0728A" opacity=".55" />
+                </svg>
+
+                <p class="eyebrow reveal" id="l1-eyebrow"></p>
+                <h1 class="nama-besar" id="l1-nama"></h1>
+                <svg class="flourish reveal" viewBox="0 0 240 26" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="gld" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0" stop-color="#D8B98C" />
+                            <stop offset="1" stop-color="#C0728A" />
+                        </linearGradient>
+                    </defs>
+                    <path pathLength="1" d="M4 16 C 52 26, 84 4, 122 12 C 156 19, 198 21, 236 7" fill="none" stroke="url(#gld)" stroke-width="2.4" stroke-linecap="round" />
+                </svg>
+
+                <!-- ✨ KUE ULANG TAHUN -->
+                <div class="cake-container" aria-hidden="true">
+                    <svg viewBox="0 0 240 190" xmlns="http://www.w3.org/2000/svg">
+                        <!-- piring -->
+                        <ellipse cx="120" cy="168" rx="95" ry="12" fill="#F0E8DD" stroke="#DDD0C0" stroke-width="1.2"/>
+                        <rect x="27" y="160" width="186" height="8" rx="3" fill="#F5EFE6" stroke="#DDD0C0" stroke-width="0.8"/>
+                        <!-- lapisan bawah -->
+                        <rect x="32" y="114" width="176" height="48" rx="8" fill="#F2C7D6"/>
+                        <rect x="32" y="114" width="176" height="14" rx="7" fill="#F8D8E4"/>
+                        <!-- tetesan frosting bawah -->
+                        <path d="M40 128 Q42 140 46 128" fill="#F8D8E4"/>
+                        <path d="M58 128 Q60 143 64 128" fill="#F8D8E4"/>
+                        <path d="M78 128 Q80 139 83 128" fill="#F8D8E4"/>
+                        <path d="M98 128 Q101 142 104 128" fill="#F8D8E4"/>
+                        <path d="M120 128 Q123 140 126 128" fill="#F8D8E4"/>
+                        <path d="M140 128 Q142 143 145 128" fill="#F8D8E4"/>
+                        <path d="M160 128 Q163 139 166 128" fill="#F8D8E4"/>
+                        <path d="M180 128 Q182 141 185 128" fill="#F8D8E4"/>
+                        <path d="M198 128 Q200 138 203 128" fill="#F8D8E4"/>
+                        <!-- lapisan tengah -->
+                        <rect x="52" y="82" width="136" height="38" rx="7" fill="#DDC8F0"/>
+                        <rect x="52" y="82" width="136" height="12" rx="6" fill="#E8D8F7"/>
+                        <!-- tetesan frosting tengah -->
+                        <path d="M60 94 Q62 106 66 94" fill="#E8D8F7"/>
+                        <path d="M82 94 Q84 108 88 94" fill="#E8D8F7"/>
+                        <path d="M106 94 Q109 105 112 94" fill="#E8D8F7"/>
+                        <path d="M130 94 Q132 107 135 94" fill="#E8D8F7"/>
+                        <path d="M152 94 Q155 104 158 94" fill="#E8D8F7"/>
+                        <path d="M172 94 Q174 106 177 94" fill="#E8D8F7"/>
+                        <!-- lapisan atas -->
+                        <rect x="72" y="54" width="96" height="32" rx="6" fill="#FEF5EA"/>
+                        <rect x="72" y="54" width="96" height="10" rx="5" fill="#FFFBF5"/>
+                        <!-- lilin & api -->
+                        <g class="candle">
+                            <rect x="86" y="24" width="7" height="30" rx="3" class="candle-body"/>
+                            <ellipse cx="89.5" cy="22" rx="4.5" ry="7" class="flame-outer" transform-origin="89.5 24"/>
+                            <ellipse cx="89.5" cy="22" rx="2.8" ry="5" class="flame-inner" transform-origin="89.5 24"/>
+                            <ellipse cx="89.5" cy="23" rx="1.6" ry="3" class="flame-core" transform-origin="89.5 24"/>
+                        </g>
+                        <g class="candle">
+                            <rect x="102" y="20" width="7" height="34" rx="3" class="candle-body"/>
+                            <ellipse cx="105.5" cy="18" rx="4.8" ry="7.5" class="flame-outer" transform-origin="105.5 20"/>
+                            <ellipse cx="105.5" cy="18" rx="3" ry="5.2" class="flame-inner" transform-origin="105.5 20"/>
+                            <ellipse cx="105.5" cy="19" rx="1.7" ry="3.2" class="flame-core" transform-origin="105.5 20"/>
+                        </g>
+                        <g class="candle">
+                            <rect x="118" y="16" width="8" height="38" rx="3.5" class="candle-body"/>
+                            <ellipse cx="122" cy="14" rx="5" ry="8" class="flame-outer" transform-origin="122 16"/>
+                            <ellipse cx="122" cy="14" rx="3.2" ry="5.5" class="flame-inner" transform-origin="122 16"/>
+                            <ellipse cx="122" cy="15" rx="1.8" ry="3.4" class="flame-core" transform-origin="122 16"/>
+                        </g>
+                        <g class="candle">
+                            <rect x="134" y="22" width="7" height="32" rx="3" class="candle-body"/>
+                            <ellipse cx="137.5" cy="20" rx="4.6" ry="7.2" class="flame-outer" transform-origin="137.5 22"/>
+                            <ellipse cx="137.5" cy="20" rx="2.9" ry="5" class="flame-inner" transform-origin="137.5 22"/>
+                            <ellipse cx="137.5" cy="21" rx="1.6" ry="3.1" class="flame-core" transform-origin="137.5 22"/>
+                        </g>
+                        <g class="candle">
+                            <rect x="148" y="26" width="6" height="28" rx="2.5" class="candle-body"/>
+                            <ellipse cx="151" cy="24" rx="4.2" ry="6.5" class="flame-outer" transform-origin="151 26"/>
+                            <ellipse cx="151" cy="24" rx="2.6" ry="4.5" class="flame-inner" transform-origin="151 26"/>
+                            <ellipse cx="151" cy="25" rx="1.5" ry="2.8" class="flame-core" transform-origin="151 26"/>
+                        </g>
+                        <!-- hiasan kecil di kue -->
+                        <circle cx="100" cy="98" r="2.5" fill="#F9E4C0"/>
+                        <circle cx="118" cy="96" r="2" fill="#F5D0E0"/>
+                        <circle cx="136" cy="99" r="2.5" fill="#F9E4C0"/>
+                        <circle cx="152" cy="97" r="2" fill="#E0D4F5"/>
+                        <circle cx="84" cy="96" r="2" fill="#F5D0E0"/>
+                        <circle cx="110" cy="134" r="2.5" fill="#FFFBF5"/>
+                        <circle cx="132" cy="135" r="2" fill="#FFFBF5"/>
+                        <circle cx="150" cy="133" r="2.5" fill="#FFFBF5"/>
+                        <circle cx="92" cy="136" r="2" fill="#FFFBF5"/>
+                        <circle cx="168" cy="132" r="2" fill="#FFFBF5"/>
+                        <circle cx="62" cy="135" r="2.5" fill="#FFFBF5"/>
+                    </svg>
+                </div>
+
+                <p class="ticket reveal" id="l1-tanggal"></p>
+                <div class="pesan" id="l1-pesan"></div>
+                <button class="btn reveal" id="btn-lanjut"></button>
+            </div>
+        </section>
+
+        <!-- LAYER 2 · Carousel kartu -->
+        <section class="layer" id="layer-2">
+            <div class="inner wide">
+                <header class="l2-head">
+                    <p class="eyebrow reveal" id="l2-eyebrow"></p>
+                    <h2 class="h-serif reveal" id="l2-judul"></h2>
+                    <p class="l2-sub reveal" id="l2-sub"></p>
+                </header>
+                <div class="car-wrap reveal">
+                    <div class="car" id="car" aria-label="Kartu-kartu pesan"></div>
+                    <div class="car-nav">
+                        <button class="arrow" id="car-prev" aria-label="Kartu sebelumnya">
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M14.5 5.5 L8 12 l6.5 6.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                        </button>
+                        <span class="counter" id="car-counter" aria-live="polite">1 / 1</span>
+                        <button class="arrow" id="car-next" aria-label="Kartu berikutnya">
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M9.5 5.5 L16 12 l-6.5 6.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                        </button>
+                    </div>
+                    <p class="hint-swipe" id="hint-swipe">geser atau pakai panahnya <span class="hint-ar">→</span></p>
+                </div>
+                <button class="btn reveal" id="btn-akhir"></button>
+            </div>
+        </section>
+
+        <!-- ✨ LAYER 3 · Penutup dengan hati beterbangan -->
+        <section class="layer" id="layer-3">
+            <div class="hearts-container" id="hearts-container" aria-hidden="true"></div>
+            <div class="inner narrow">
+                <div class="sheet-wrap reveal">
+                    <div class="sheet">
+                        <span class="sheet-sparkle tl-s" aria-hidden="true">✦</span>
+                        <span class="sheet-sparkle tr-s" aria-hidden="true">✧</span>
+                        <span class="sheet-sparkle bl-s" aria-hidden="true">✧</span>
+                        <span class="sheet-sparkle br-s" aria-hidden="true">✦</span>
+                        <div class="seal-mini">♡</div>
+                        <h2 class="h-serif reveal" id="l3-judul"></h2>
+                        <div class="pesan" id="l3-pesan"></div>
+                        <p class="ttd reveal" id="l3-tanda"></p>
+                    </div>
+                </div>
+                <button class="btn subtle reveal" id="btn-ulang"></button>
+            </div>
+        </section>
+    </main>
+
+    <canvas id="petalsFront" aria-hidden="true"></canvas>
+    <div class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <script>
+        /* ================================================================
+           ⭐ EDIT DI SINI ⭐
+           Semua teks website ada di blok CONFIG ini.
+           Ganti isinya sesukamu — bagian di bawah CONFIG nggak perlu diubah.
+           Tips: pakai \n untuk ganti paragraf/baris baru.
+           ================================================================ */
+        const CONFIG = {
+
+            nama: "Yolanda",
+
+            tanggal: "22 Juli 2026",
+
+            // ---------- COUNTDOWN sebelum hari-H ----------
+            // Sebelum waktu "target", situs cuma nampilin hitung mundur realtime.
+            // Format target: TAHUN-BULAN-TANGGAL "T" JAM, diakhiri +07:00 (patokan WIB —
+            // jadi tetap akurat walau HP yang buka beda zona waktu).
+            // Mau ngetes tanpa nunggu tengah malam?
+            //  • ?tes di URL     → countdown dipercepat jadi 10 detik, buat lihat
+            //                      momen "waktunya tiba" + semua transisinya
+            //  • ?preview di URL → langsung lompat ke amplop (countdown dilewati)
+            //  • atau sementara set aktif: false.
+            countdown: {
+                aktif: true,
+                target: "2026-07-22T00:00:00+07:00",
+                eyebrow: "sebentar lagi",
+                teks: "amplopnya baru bisa dibuka pas hari spesialmu tiba…",
+                keterangan: "22 Juli · 00.00 WIB",
+                selesai: "sudah waktunya 🎉",
+            },
+
+            pembuka: {
+                eyebrow: "ada sesuatu nih buat oya",
+                teks: "sebuah hadiah kecil, aku buat untuk kamu.",
+                tombol: "klik amplop nya deh",
+            },
+
+            ucapan: {
+                eyebrow: "selamat ulang tahun",
+                pesan: "Happy birthday Oya\ni made this little website just for your special day",
+                tombol: "tekan atuna",
+            },
+
+            kartu: {
+                eyebrow: "dari hati",
+                judul: "Beberapa hal untukmu",
+                sub: "geser satu-satu ya",
+                daftar: [
+                    { judul: "apresiasi",
+                        teks: "makasih ya oya udah kuat, bisa ngelewatin dan masih mau berjuang menyelesaikan semuanya" },
+                    { judul: "doa",
+                        teks: "semoga oya selalu diberikan kesehatan, dijauhkan dari marah bahaya dan panjang umur" },
+                    { judul: "harapan",
+                        teks: "aku harap oya selalu tau bahwa oya gak sendiri ya, jadi selalu andalkan lah kami orang orang yang ada disekitar mu ketika dirimu merasa dunia sedang jahat kepadamu" },
+                    { judul: "pesan kecil",
+                        teks: "ingat untuk mengapresiasi dirimu dan juga menghargai dirimu ya oya, your special than you know" },
+                ],
+                tombol: "one more thing",
+            },
+
+            penutup: {
+                judul: "be happy",
+                pesan: "ini hari spesial mu jadi aku harap dirimu bahagia seterusnya, bahkan ketika dirimu merasa tidak ada yang hal yang patut dibahagiakan aku harap dirimu tetap bisa memberikan senyum manis mu itu kepada dunia.\n dirimu berharga, jauh lebih berharga dari yang dirimu tau, dan aku harap oya tidak membiarkan orang orang merusak itu dengan sikap, perkataan dan perbuatan mereka terhadap mu. \ntetap lah menjadi dirimu yang ceria, aktif dan lucu. doa ku selalu menyertai mu, mendoakan mu selalu sehat, bahagia, aman, dan semua hal baik diberikan kepadamu cause you deserve the world oya ",
+                tanda: "— dari yang bersyukur mengenalmu",
+                tombol: "Putar lagi dari awal",
+            },
+        };
+        /* ================================================================
+           ⭐ SELESAI. Di bawah ini mesin website — nggak perlu diubah. ⭐
+           ================================================================ */
+
+
+        const $ = (s) => document.querySelector(s);
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        /* ---------- helper ---------- */
+        function isiParagraf(wadah, teks) {
+            wadah.innerHTML = "";
+            String(teks).split("\n").forEach((baris) => {
+                if (!baris.trim()) return;
+                const p = document.createElement("p");
+                p.textContent = baris;
+                p.classList.add("reveal");
+                wadah.appendChild(p);
+            });
+        }
+
+        function setBtn(el, teks, pakaiPanah) {
+            el.innerHTML = "";
+            el.appendChild(document.createTextNode(teks));
+            if (pakaiPanah) {
+                const s = document.createElement("span");
+                s.className = "ar";
+                s.textContent = "→";
+                el.appendChild(s);
+            }
+        }
+
+        function svgBunga(warnaKelopak, warnaTengah) {
+            let petal = "";
+            for (let i = 0; i < 5; i++) {
+                petal += '<ellipse cx="30" cy="17" rx="6.5" ry="11" fill="' + warnaKelopak +
+                    '" transform="rotate(' + (i * 72) + ' 30 27)"/>';
+            }
+            return '<svg class="flower" viewBox="0 0 60 60" aria-hidden="true">' + petal +
+                '<circle cx="30" cy="27" r="4.6" fill="' + warnaTengah + '"/>' +
+                '<path d="M30 33 q-5 12 -3 22" stroke="#9DB49A" stroke-width="1.6" fill="none" stroke-linecap="round"/>' +
+                '<path d="M28 46 q-9 -2 -11 -10 q 10 1 11 10Z" fill="#A9BFA4" opacity=".8"/>' +
+                '</svg>';
+        }
+        const WARNA_BUNGA = [
+            ["#F0B7C8", "#D9A45E"],
+            ["#C7B4E6", "#D9A45E"],
+            ["#EBCB92", "#C0728A"],
+            ["#B9D2B5", "#C0728A"],
+        ];
+
+        /* ---------- isi teks dari CONFIG ---------- */
+        function isiTeks() {
+            document.title = "Untuk " + CONFIG.nama + " \u2661";
+
+            $("#l0-eyebrow").textContent = CONFIG.pembuka.eyebrow;
+            $("#l0-teks").textContent = CONFIG.pembuka.teks;
+            $("#l0-nama").textContent = CONFIG.nama;
+            $("#l0-hint").textContent = CONFIG.pembuka.tombol + " ";
+            const inisial = (CONFIG.nama.trim()[0] || "\u2661").toUpperCase();
+            $("#seal-init").textContent = inisial;
+
+            $("#l1-eyebrow").textContent = CONFIG.ucapan.eyebrow;
+            $("#l1-nama").textContent = CONFIG.nama;
+            setBtn($("#btn-lanjut"), CONFIG.ucapan.tombol, true);
+            const tiket = $("#l1-tanggal");
+            if (CONFIG.tanggal && CONFIG.tanggal.trim()) {
+                tiket.textContent = CONFIG.tanggal;
+            } else {
+                tiket.classList.add("hidden");
+            }
+            isiParagraf($("#l1-pesan"), CONFIG.ucapan.pesan);
+
+            $("#l2-eyebrow").textContent = CONFIG.kartu.eyebrow;
+            $("#l2-judul").textContent = CONFIG.kartu.judul;
+            $("#l2-sub").textContent = CONFIG.kartu.sub || "";
+            setBtn($("#btn-akhir"), CONFIG.kartu.tombol, true);
+
+            const car = $("#car");
+            car.innerHTML = "";
+            CONFIG.kartu.daftar.forEach((k, i) => {
+                const card = document.createElement("article");
+                card.className = "card";
+
+                const title = document.createElement("h3");
+                title.className = "card-title";
+                const em = document.createElement("span");
+                em.className = "em";
+                em.textContent = k.emoji || "\u2740";
+                title.appendChild(em);
+                title.appendChild(document.createTextNode(k.judul || ""));
+
+                const sq = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                sq.setAttribute("class", "sq");
+                sq.setAttribute("viewBox", "0 0 60 8");
+                sq.innerHTML =
+                    '<path d="M2 5 Q 8 1 14 5 T 26 5 T 38 5 T 50 5 T 58 4" fill="none" stroke="#C0728A" stroke-width="1.6" stroke-linecap="round"/>';
+
+                const body = document.createElement("p");
+                body.className = "card-body";
+                body.textContent = k.teks || "";
+
+                card.append(title, sq, body);
+                const w = WARNA_BUNGA[i % WARNA_BUNGA.length];
+                card.insertAdjacentHTML("beforeend", svgBunga(w[0], w[1]));
+                car.appendChild(card);
+            });
+
+            $("#l3-judul").textContent = CONFIG.penutup.judul;
+            isiParagraf($("#l3-pesan"), CONFIG.penutup.pesan);
+            $("#l3-tanda").textContent = CONFIG.penutup.tanda;
+            setBtn($("#btn-ulang"), CONFIG.penutup.tombol, false);
+        }
+
+        /* ---------- manajemen layer ---------- */
+        const layers = Array.from(document.querySelectorAll(".layer"));
+        const dotEls = Array.from(document.querySelectorAll(".dots i"));
+        let current = 0;
+        let heartsInterval = null;
+
+        function siapkanReveal(layer) {
+            layer.querySelectorAll(".reveal").forEach((el, i) => {
+                el.style.transitionDelay = (0.22 + i * 0.12).toFixed(2) + "s";
+            });
+        }
+
+        function spawnHearts() {
+            if (reduceMotion) return;
+            const container = $("#hearts-container");
+            if (!container) return;
+            container.innerHTML = "";
+            heartsInterval = setInterval(() => {
+                if (document.hidden) return;
+                const heart = document.createElement("span");
+                heart.className = "float-heart";
+                heart.textContent = "❤";
+                heart.style.left = Math.random() * 94 + "%";
+                heart.style.fontSize = (Math.random() * 22 + 14) + "px";
+                heart.style.animationDuration = (Math.random() * 5 + 6) + "s";
+                heart.style.setProperty("--drift", (Math.random() * 80 - 40) + "px");
+                heart.style.setProperty("--spin", (Math.random() * 40 - 20) + "deg");
+                const colors = ["#F0B7C8", "#C7B4E6", "#EBCB92", "#F8D0DC", "#DCE7F5", "#FFD1DC",
+                "#F9B8C9"];
+                heart.style.color = colors[Math.floor(Math.random() * colors.length)];
+                container.appendChild(heart);
+                setTimeout(() => {
+                    if (heart.parentNode) heart.remove();
+                }, 12000);
+            }, 550);
+        }
+
+        function clearHearts() {
+            if (heartsInterval) {
+                clearInterval(heartsInterval);
+                heartsInterval = null;
+            }
+            const container = $("#hearts-container");
+            if (container) container.innerHTML = "";
+        }
+
+        function goTo(idx) {
+            if (idx === current) return;
+            const prev = layers[current];
+            const next = layers[idx];
+
+            if (current === 3) clearHearts();
+
+            prev.querySelectorAll(".reveal").forEach((el) => { el.style.transitionDelay = "0s"; });
+            prev.classList.remove("is-active", "is-in");
+
+            next.scrollTop = 0;
+            next.classList.add("is-active");
+            siapkanReveal(next);
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => next.classList.add("is-in"));
+            });
+
+            current = idx;
+            dotEls.forEach((d, i) => d.classList.toggle("on", i === current));
+            if (idx === 2) setTimeout(siapkanCarousel, 60);
+            if (idx === 3) {
+                spawnHearts();
+                setTimeout(() => {
+                    if (typeof W !== "undefined" && typeof H !== "undefined") burst(W / 2, H * 0.35);
+                }, 500);
+            }
+        }
+
+        /* ---------- kelopak, spark, debu (dua canvas) ---------- */
+        const cvsB = $("#petalsBack"),
+            ctxB = cvsB.getContext("2d");
+        const cvsF = $("#petalsFront"),
+            ctxF = cvsF.getContext("2d");
+        let W = 0,
+            H = 0,
+            rafId = null,
+            t = 0;
+        let partsB = [],
+            partsF = [];
+
+        const WARNA_KELOPAK = ["#F2C7D2", "#E7D6F2", "#F8E3D8", "#F6D9E2", "#DCE7F5"];
+        const WARNA_SPARK = "#D9BE8E";
+        const WARNA_DEBU = ["#FDF4E3", "#F9EDFA", "#FFF8F0", "#FEF5E7", "#F3ECFD"];
+
+        function acak(a, b) { return a + Math.random() * (b - a); }
+
+        function resize() {
+            const dpr = Math.min(window.devicePixelRatio || 1, 2);
+            W = window.innerWidth;
+            H = window.innerHeight;
+            [
+                [cvsB, ctxB],
+                [cvsF, ctxF]
+            ].forEach(([c, x]) => {
+                c.width = W * dpr;
+                c.height = H * dpr;
+                x.setTransform(dpr, 0, 0, dpr, 0, 0);
+            });
+        }
+
+        function buatKelopak(x, y, opsi) {
+            const dekat = !!opsi.dekat;
+            const p = {
+                jenis: "kelopak",
+                x,
+                y,
+                ukuran: dekat ? acak(15, 23) : acak(6, 12),
+                rot: acak(0, Math.PI * 2),
+                vr: acak(-0.02, 0.02),
+                fase: acak(0, Math.PI * 2),
+                warna: WARNA_KELOPAK[(Math.random() * WARNA_KELOPAK.length) | 0],
+                alpha: dekat ? acak(0.22, 0.38) : acak(0.5, 0.85),
+                ambient: !opsi.burst,
+            };
+            if (opsi.burst) {
+                const a = acak(0, Math.PI * 2),
+                    k = acak(2.5, 8.5);
+                p.vx = Math.cos(a) * k;
+                p.vy = Math.sin(a) * k - acak(1.5, 3.5);
+                p.hidup = 1;
+                p.alpha = acak(0.6, 0.95);
+                p.ukuran = acak(7, 14);
+            } else {
+                p.vy = dekat ? acak(0.65, 1.15) : acak(0.25, 0.6);
+                p.vx = 0;
+            }
+            return p;
+        }
+
+        function buatSpark(x, y, burst) {
+            const p = {
+                jenis: "spark",
+                x,
+                y,
+                ukuran: acak(1.6, 3.2),
+                fase: acak(0, Math.PI * 2),
+                ambient: !burst
+            };
+            if (burst) {
+                const a = acak(0, Math.PI * 2),
+                    k = acak(1.5, 6.5);
+                p.vx = Math.cos(a) * k;
+                p.vy = Math.sin(a) * k - acak(0.5, 2);
+                p.hidup = 1;
+            } else {
+                p.vy = acak(-0.12, 0.12);
+                p.vx = acak(-0.1, 0.1);
+            }
+            return p;
+        }
+
+        function buatDebu(x, y) {
+            return {
+                jenis: "debu",
+                x,
+                y,
+                ukuran: acak(0.8, 2.4),
+                alpha: acak(0.25, 0.6),
+                warna: WARNA_DEBU[(Math.random() * WARNA_DEBU.length) | 0],
+                vy: acak(-0.08, 0.06),
+                vx: acak(-0.1, 0.1),
+                fase: acak(0, Math.PI * 2),
+                ambient: true,
+            };
+        }
+
+        function spawnAmbient() {
+            const nJauh = Math.min(55, Math.round(W / 17));
+            for (let i = 0; i < nJauh; i++) partsB.push(buatKelopak(acak(0, W), acak(-H * 0.2, H), {}));
+            for (let i = 0; i < 30; i++) partsB.push(buatSpark(acak(0, W), acak(0, H), false));
+            for (let i = 0; i < 50; i++) partsB.push(buatDebu(acak(0, W), acak(0, H)));
+            for (let i = 0; i < 18; i++) partsF.push(buatKelopak(acak(0, W), acak(-H * 0.3, H), { dekat: true }));
+            for (let i = 0; i < 12; i++) partsF.push(buatSpark(acak(0, W), acak(0, H), false));
+        }
+
+        function burst(x, y) {
+            if (reduceMotion) return;
+            for (let i = 0; i < 64; i++) partsF.push(buatKelopak(x, y, { burst: true }));
+            for (let i = 0; i < 18; i++) partsF.push(buatSpark(x, y, true));
+            for (let i = 0; i < 30; i++) {
+                const d = buatDebu(x, y);
+                d.ambient = false;
+                const a = acak(0, Math.PI * 2),
+                    k = acak(2, 7);
+                d.vx = Math.cos(a) * k;
+                d.vy = Math.sin(a) * k - acak(1, 4);
+                d.hidup = 1;
+                d.ukuran = acak(1.5, 3.5);
+                d.alpha = acak(0.5, 0.85);
+                partsF.push(d);
+            }
+        }
+
+        function gambarKelopak(ctx, p) {
+            ctx.save();
+            ctx.translate(p.x, p.y);
+            ctx.rotate(p.rot + Math.sin(t * 0.02 + p.fase) * 0.4);
+            ctx.globalAlpha = p.alpha * (p.ambient ? 1 : Math.max(p.hidup, 0));
+            ctx.fillStyle = p.warna;
+            const s = p.ukuran;
+            ctx.beginPath();
+            ctx.moveTo(0, -s);
+            ctx.quadraticCurveTo(s * 0.85, -s * 0.25, 0, s);
+            ctx.quadraticCurveTo(-s * 0.85, -s * 0.25, 0, -s);
+            ctx.fill();
+            ctx.restore();
+        }
+
+        function gambarSpark(ctx, p) {
+            const kilau = 0.35 + 0.65 * Math.abs(Math.sin(t * 0.04 + p.fase));
+            ctx.save();
+            ctx.translate(p.x, p.y);
+            ctx.globalAlpha = kilau * (p.ambient ? 1 : Math.max(p.hidup, 0));
+            ctx.fillStyle = WARNA_SPARK;
+            const s = p.ukuran * 2.4;
+            ctx.beginPath();
+            ctx.moveTo(0, -s);
+            ctx.lineTo(s * 0.32, 0);
+            ctx.lineTo(0, s);
+            ctx.lineTo(-s * 0.32, 0);
+            ctx.closePath();
+            ctx.fill();
+            ctx.restore();
+        }
+
+        function gambarDebu(ctx, p) {
+            const kilau = 0.5 + 0.5 * Math.abs(Math.sin(t * 0.025 + p.fase));
+            ctx.save();
+            ctx.translate(p.x, p.y);
+            ctx.globalAlpha = p.alpha * kilau * (p.ambient ? 1 : Math.max(p.hidup, 0));
+            ctx.fillStyle = p.warna;
+            ctx.shadowColor = p.warna;
+            ctx.shadowBlur = p.ukuran * 2.5;
+            ctx.beginPath();
+            ctx.arc(0, 0, p.ukuran, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.restore();
+        }
+
+        function prosesDaftar(daftar, ctx) {
+            for (let i = daftar.length - 1; i >= 0; i--) {
+                const p = daftar[i];
+                if (p.ambient) {
+                    p.y += p.vy;
+                    p.x += p.vx + Math.sin(t * 0.008 + p.fase) * 0.3;
+                    if (p.jenis === "kelopak") p.rot += p.vr;
+                    if (p.y > H + 30) { p.y = -30;
+                        p.x = acak(0, W); }
+                    if (p.x > W + 30) p.x = -30;
+                    if (p.x < -30) p.x = W + 30;
+                } else {
+                    p.vy += 0.06;
+                    p.vx *= 0.985;
+                    p.vy *= 0.985;
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    if (p.jenis === "kelopak") p.rot += p.vr * 4;
+                    p.hidup -= 0.012;
+                    if (p.hidup <= 0 || p.y > H + 50) { daftar.splice(i, 1); continue; }
+                }
+                if (p.jenis === "kelopak") gambarKelopak(ctx, p);
+                else if (p.jenis === "spark") gambarSpark(ctx, p);
+                else if (p.jenis === "debu") gambarDebu(ctx, p);
+            }
+        }
+
+        function langkah() {
+            t++;
+            ctxB.clearRect(0, 0, W, H);
+            ctxF.clearRect(0, 0, W, H);
+            prosesDaftar(partsB, ctxB);
+            prosesDaftar(partsF, ctxF);
+            rafId = requestAnimationFrame(langkah);
+        }
+
+        function mulaiCanvas() {
+            if (reduceMotion) { cvsB.style.display = "none";
+                cvsF.style.display = "none"; return; }
+            resize();
+            spawnAmbient();
+            rafId = requestAnimationFrame(langkah);
+            window.addEventListener("resize", resize);
+            document.addEventListener("visibilitychange", () => {
+                if (document.hidden) {
+                    if (rafId) { cancelAnimationFrame(rafId);
+                        rafId = null; }
+                } else if (!rafId) {
+                    rafId = requestAnimationFrame(langkah);
+                }
+            });
+        }
+
+        /* ---------- amplop ---------- */
+        const env = $("#env");
+        let amplopDibuka = false;
+
+        function bukaAmplop() {
+            if (amplopDibuka) return;
+            amplopDibuka = true;
+            if (reduceMotion) { goTo(1); return; }
+            env.classList.add("open");
+            const r = env.getBoundingClientRect();
+            setTimeout(() => burst(r.left + r.width / 2, r.top + r.height * 0.35), 620);
+            setTimeout(() => goTo(1), 1200);
+        }
+        env.addEventListener("click", bukaAmplop);
+        env.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") { e.preventDefault();
+                bukaAmplop(); }
+        });
+
+        /* ---------- carousel ---------- */
+        const car = $("#car");
+        const btnPrev = $("#car-prev");
+        const btnNext = $("#car-next");
+        const counter = $("#car-counter");
+        const hintSwipe = $("#hint-swipe");
+        let carStep = 0,
+            hintHilang = false;
+
+        function ukurStep() {
+            const c = car.querySelector(".card");
+            if (!c) return;
+            const gap = parseFloat(getComputedStyle(car).gap) || 20;
+            carStep = c.getBoundingClientRect().width + gap;
+        }
+
+        function updateCar() {
+            if (!carStep) ukurStep();
+            const total = CONFIG.kartu.daftar.length;
+            const i = Math.min(total - 1, Math.max(0, Math.round(car.scrollLeft / carStep)));
+            counter.textContent = (i + 1) + " / " + total;
+            btnPrev.disabled = car.scrollLeft < 24;
+            btnNext.disabled = car.scrollLeft > car.scrollWidth - car.clientWidth - 24;
+        }
+
+        function geser(arah) {
+            ukurStep();
+            car.scrollBy({ left: carStep * arah, behavior: reduceMotion ? "auto" : "smooth" });
+        }
+
+        function siapkanCarousel() { ukurStep();
+            updateCar(); }
+
+        btnPrev.addEventListener("click", () => geser(-1));
+        btnNext.addEventListener("click", () => geser(1));
+        car.addEventListener("scroll", () => {
+            requestAnimationFrame(updateCar);
+            if (!hintHilang && car.scrollLeft > 30) {
+                hintHilang = true;
+                hintSwipe.classList.add("gone");
+            }
+        }, { passive: true });
+        window.addEventListener("resize", () => { ukurStep();
+            updateCar(); });
+        document.addEventListener("keydown", (e) => {
+            if (current !== 2) return;
+            if (e.key === "ArrowRight") geser(1);
+            if (e.key === "ArrowLeft") geser(-1);
+        });
+
+        /* ---------- tombol antar layer ---------- */
+        $("#btn-lanjut").addEventListener("click", () => goTo(2));
+        $("#btn-akhir").addEventListener("click", () => {
+            goTo(3);
+        });
+        $("#btn-ulang").addEventListener("click", (e) => {
+            const r = e.currentTarget.getBoundingClientRect();
+            burst(r.left + r.width / 2, r.top + r.height / 2);
+            clearHearts();
+            setTimeout(() => goTo(1), 130);
+        });
+
+        /* ---------- ✨ gerbang countdown menuju hari-H ---------- */
+        const gate = $("#gate");
+        let gateInterval = null;
+
+        function mulaiSitus() {
+            document.body.classList.remove("gated");
+            siapkanReveal(layers[0]);
+            setTimeout(() => layers[0].classList.add("is-in"), 80);
+        }
+
+        function siapkanGate() {
+            const cd = CONFIG.countdown || {};
+
+            // ✨ MODE TES: buka situs dengan tambahan ?tes di URL
+            // → countdown dipercepat jadi 10 detik dari sekarang,
+            //   biar bisa lihat momen "waktunya tiba" tanpa nunggu tengah malam.
+            const modeTes = /[?#&]tes\b/i.test(location.href);
+
+            const target = modeTes
+                ? new Date(Date.now() + 10 * 1000)
+                : new Date(cd.target || "");
+            const targetValid = !isNaN(target.getTime());
+            const lewatURL = /[?#](preview|buka)/i.test(location.href);
+
+            // Countdown dilewati kalau: dimatikan, tanggal target rusak,
+            // ada ?preview di URL, atau waktunya memang sudah lewat.
+            // (mode tes selalu jalan, mengabaikan semua kondisi di atas)
+            if (!modeTes && (!cd.aktif || !targetValid || lewatURL || Date.now() >= target.getTime())) {
+                if (gate) gate.remove();
+                mulaiSitus();
+                return;
+            }
+
+            $("#gate-eyebrow").textContent = cd.eyebrow || "";
+            $("#gate-teks").textContent = cd.teks || "";
+            $("#gate-tanggal").textContent = modeTes ? "(mode tes \u00b7 10 detik)" : (cd.keterangan || "");
+            document.body.classList.add("gated");
+            requestAnimationFrame(() => gate.classList.add("show"));
+
+            const elH = $("#cd-hari"),
+                elJ = $("#cd-jam"),
+                elM = $("#cd-menit"),
+                elD = $("#cd-detik");
+            const pad = (n) => String(n).padStart(2, "0");
+
+            function tik() {
+                const sisa = target.getTime() - Date.now();
+                if (sisa <= 0) {
+                    if (gateInterval) { clearInterval(gateInterval);
+                        gateInterval = null; }
+                    elH.textContent = elJ.textContent = elM.textContent = elD.textContent = "00";
+                    selesaiGate();
+                    return;
+                }
+                elH.textContent = pad(Math.floor(sisa / 86400000));
+                elJ.textContent = pad(Math.floor(sisa % 86400000 / 3600000));
+                elM.textContent = pad(Math.floor(sisa % 3600000 / 60000));
+                elD.textContent = pad(Math.floor(sisa % 60000 / 1000));
+            }
+
+            function selesaiGate() {
+                $("#gate-teks").textContent = cd.selesai || "sudah waktunya!";
+                burst((W || window.innerWidth) / 2, (H || window.innerHeight) * 0.4);
+                setTimeout(() => burst((W || window.innerWidth) / 2, (H || window.innerHeight) * 0.32), 500);
+                setTimeout(() => {
+                    gate.classList.add("hide");
+                    mulaiSitus();
+                    setTimeout(() => gate.remove(), 1000);
+                }, 1800);
+            }
+
+            tik();
+            gateInterval = setInterval(tik, 1000);
+        }
+
+        /* ---------- mulai ---------- */
+        isiTeks();
+        mulaiCanvas();
+        dotEls[0].classList.add("on");
+        siapkanGate();
+    </script>
+</body>
+</html>
